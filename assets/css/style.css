@@ -1,4 +1,14 @@
-header img {
-  width: 25%;
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__img {
+  width: 15%;
+  background-color: rgb(150, 184, 190);
+}
+.header .header__img .header__recherches {
+  display: flex;
+  align-items: center;
 }
 
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.header{
+    display:flex;
+    flex-direction: column;
+   .header__img{
+        width:15%;
+        background-color: rgb(150, 184, 190);
+        .header__recherches{
+            display:flex;
+            align-items: center;
+
+        }
+    }
+}
+
+
