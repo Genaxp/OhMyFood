@@ -16,10 +16,14 @@ header {
     justify-content:center;
     & img{
         width:50%;
+        height:30px;
         padding: 20px 0;
     }
 }
+
 $color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-terciary:#99E2D0;
 
 nav.recherches{
     display: flex;
@@ -45,17 +49,44 @@ nav.recherches{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        background-color: rgb(240, 245, 247);
+        padding-bottom:60px;
         & .explorer{
             border-radius:50px;
             padding: 0 25px;
-            background-color:$color-primary;
+            background:linear-gradient(to bottom right, $color-secondary, $color-primary);
             color:white;
+            border:none;
         }
-        } 
+    } 
 }
 
+section.concept{
+    padding-left:20px;
+    & h1{
+        font-weight:bold ;
+    }
+    & button{
+        border-radius:15px;
+        box-shadow:1px 1px 1px 4px rgb(240, 245, 247);
+        border:none;            
+        display: flex;
+        margin-bottom:20px;
+        padding:10px 0px;
+        align-items: center;
+        & i{
+          padding-right:0px;
+        }
+        & p{
+        padding:0 40px;
+        }
+    }
+}
 
-
+.prez{
+    background:rgb(233, 232, 232);
+    margin:15px 0;
+}
 
 footer{
     background-color: black;
@@ -70,6 +101,8 @@ footer{
         padding-left:0;
         & i{
             padding-right:30px;
+            display:flex;
+            justify-content: center;
         }
         & li{
             padding:10px 0;

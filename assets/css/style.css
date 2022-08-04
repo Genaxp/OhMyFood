@@ -45,12 +45,37 @@ nav.recherches .decouverte {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: rgb(240, 245, 247);
+  padding-bottom: 60px;
 }
 nav.recherches .decouverte .explorer {
   border-radius: 50px;
   padding: 0 25px;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  border: none;
+}
+
+section.concept {
+  padding-left: 20px;
+}
+section.concept h1 {
+  font-weight: bold;
+}
+section.concept button {
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 4px rgb(240, 245, 247);
+  border: none;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  align-items: center;
+}
+section.concept button i {
+  padding-right: 0px;
+}
+section.concept button p {
+  padding: 0 40px;
 }
 
 footer {
@@ -68,6 +93,8 @@ footer ul {
 }
 footer ul i {
   padding-right: 30px;
+  display: flex;
+  justify-content: center;
 }
 footer ul li {
   padding: 10px 0;
