@@ -1,10 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,900i");
 html, body {
-  font-family: "Roboto", sans-serif;
-  height: 100%;
+  font-family: "Roboto", "Shrikhand", sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: bold;
+}
+html h1, html h2, html h3, body h1, body h2, body h3 {
+  font-family: "Shrikhand";
+}
+html h1 span, html h1 p, html h1 li, html h2 span, html h2 p, html h2 li, html h3 span, html h3 p, html h3 li, body h1 span, body h1 p, body h1 li, body h2 span, body h2 p, body h2 li, body h3 span, body h3 p, body h3 li {
+  font-family: "Roboto";
+}
+html .prez a, body .prez a {
+  text-decoration: none;
+  color: black;
+}
+html footer a, body footer a {
+  text-decoration: none;
+  color: white;
 }
 
 * {
@@ -28,11 +39,11 @@ nav.recherches .lieux {
   background-color: rgb(233, 232, 232);
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  padding: 15px;
   box-shadow: inset 2px 13px 5px -10px #c9c7c7;
 }
 nav.recherches .lieux i {
-  padding-right: 15px;
+  padding: 0 20px;
 }
 nav.recherches .lieux input {
   border: none;
@@ -45,46 +56,121 @@ nav.recherches .decouverte {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgb(240, 245, 247);
+  background-color: whitesmoke;
   padding-bottom: 60px;
+}
+nav.recherches .decouverte h1 {
+  padding: 0px 40px;
+  margin-top: 40px;
+}
+nav.recherches .decouverte span {
+  padding: 0px 40px;
+  margin-bottom: 20px;
 }
 nav.recherches .decouverte .explorer {
   border-radius: 50px;
-  padding: 0 25px;
+  padding: 0px 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border: none;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 section.concept {
-  padding-left: 20px;
-}
-section.concept h1 {
-  font-weight: bold;
+  padding: 20px;
 }
 section.concept button {
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px 4px rgb(240, 245, 247);
+  border-radius: 20px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px 1px lightgrey;
   border: none;
   display: flex;
   margin-bottom: 20px;
   padding: 10px 0px;
   align-items: center;
+  width: 100%;
+}
+section.concept button:hover {
+  background-color: rgb(242, 231, 245);
+}
+section.concept button i:hover {
+  color: #9356DC;
 }
 section.concept button i {
-  padding-right: 0px;
+  padding-left: 8px;
 }
 section.concept button p {
-  padding: 0 40px;
+  padding: 0 40px 0 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+section.concept span {
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  padding: 8px;
+  position: relative;
+  right: 10px;
+}
+
+.prez {
+  background: rgb(233, 232, 232);
+  padding: 40px 15px;
+}
+.prez figure {
+  margin: 16px 0;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 5px 5px 5px 1px lightgrey;
+}
+.prez figure span {
+  position: absolute;
+  right: 30px;
+  padding: 8px;
+  margin-top: 15px;
+  color: #28967a;
+  background: #99E2D0;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+.prez h3, .prez p {
+  margin: 0;
+  padding: 0 10px;
+}
+.prez p {
+  padding-top: 5px;
+}
+.prez i {
+  color: rgb(77, 73, 73);
+  padding-right: 10px;
+}
+.prez i:hover {
+  color: #9356DC;
+}
+.prez figcaption {
+  font-size: 1.2em;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.prez .restau img {
+  width: 100%;
+  height: 190px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(46, 44, 44);
   color: white;
   padding: 40px;
 }
 footer img {
-  width: 40%;
+  width: 30%;
   filter: brightness(20);
 }
 footer ul {
