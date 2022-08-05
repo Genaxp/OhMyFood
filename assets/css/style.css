@@ -147,7 +147,10 @@ section.concept span {
   padding-right: 10px;
 }
 .prez i:hover {
-  color: #9356DC;
+  background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .prez figcaption {
   font-size: 1.2em;
