@@ -3,11 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
 }
-html h1, html h2, html h3, body h1, body h2, body h3 {
-  font-family: "Shrikhand";
-}
-html h1 span, html h1 p, html h1 li, html h2 span, html h2 p, html h2 li, html h3 span, html h3 p, html h3 li, body h1 span, body h1 p, body h1 li, body h2 span, body h2 p, body h2 li, body h3 span, body h3 p, body h3 li {
-  font-family: "Roboto";
+html h1, html span, html p, html li, body h1, body span, body p, body li {
+  font-family: "Roboto", sans-serif;
 }
 html .prez a, body .prez a {
   text-decoration: none;
