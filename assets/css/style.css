@@ -23,11 +23,10 @@ html footer a, body footer a {
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 header img {
-  width: 50%;
+  width: 40%;
   padding: 20px 0;
 }
 
