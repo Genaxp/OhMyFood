@@ -24,7 +24,8 @@ html, body{
 header {
    text-align: center;
     & img{
-        width:40%;
+        width:auto;
+        height:50px;
         padding: 20px 0;
     }
 }
@@ -35,7 +36,8 @@ $color-terciary:#99E2D0;
 
 nav.recherches{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+} 
     & .lieux{
         background-color:rgb(233, 232, 232);
         display:flex;
@@ -53,13 +55,14 @@ nav.recherches{
         }    
     }
     
-    & .decouverte{
+    & .decouverte{ 
         display:flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         background-color:whitesmoke;
         padding-bottom:60px;
+ 
         & h1{
             padding:0px 40px;
             margin-top:40px;
@@ -78,7 +81,6 @@ nav.recherches{
             font-weight: bold;
         }
     } 
-}
 
 section.concept{
     padding:20px;
@@ -177,7 +179,8 @@ footer{
     color:white;
     padding:40px;
     & img{
-        width:30%;
+        width:auto;
+        height: 30px;
         filter: brightness(20) ;
     }
     & ul{
@@ -190,7 +193,7 @@ footer{
         }
         & li{
             padding:10px 0;
-            font-size:1.4em;
+            font-size:1em;
         }
     }
 }
