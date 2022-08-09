@@ -3,7 +3,7 @@ html, body{
     margin:0;
     padding:0;
 
-    & h1,span,p, li, input{
+    h1,span,p, li, input{
         font-family: 'Roboto', sans-serif;
     }
     
@@ -24,7 +24,7 @@ html, body{
 header {
    text-align: center;
 
-    & img{
+    img{
         width:50%;
         height:100px;
         padding: 20px 0;
@@ -49,16 +49,16 @@ nav.recherches{
         background-color:$color-terciary ; 
     }
 
-    & .lieux{
+    .lieux{
         background-color:rgb(233, 232, 232);
         display:flex;
         justify-content: center;
         padding: 25px;
         box-shadow: inset 2px 13px 5px -10px #c9c7c7;
-        & i{
+        i{
             padding:0 20px;
         }
-        & input{
+        input{
             border:none;
             background-color:rgb(233, 232, 232);
             font-size:1.1em;
@@ -66,7 +66,7 @@ nav.recherches{
         }    
     }
     
-    & .decouverte{ 
+    .decouverte{ 
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -77,21 +77,22 @@ nav.recherches{
             background-color:white; 
         }
  
-        & h1{
+        h1{
             padding:0px 40px;
             margin-top:40px;
         }
-        & span{
+        p{
             padding:0px 40px;
             margin-bottom:20px;
         }
-        & .explorer{
+        .explorer{
             border-radius:50px;
-            padding:0px 45px;
+            padding:10px 50px;
             background:linear-gradient(to bottom right, $color-secondary, $color-primary);
             color:white;
             border:none;
             font-size: 1em;
+
         }
     } 
 }
@@ -104,18 +105,18 @@ section.concept{
         flex-direction: column;
         align-items: center;  
     }
-    & .bloc{
+    .bloc{
         @media (min-width: 992px) {
           display:flex;
         }
     }
-    & .contour{
+    .contour{
         @media (min-width: 992px) {
           padding:10px 40px;
         }
     }
     
-    & .titre{
+    .titre{
         @media (min-width: 992px) {
             width: -webkit-fill-available;
             font-size: x-large;
@@ -123,7 +124,7 @@ section.concept{
         }
     }
     
-    & button{
+    button{
         border-radius:20px;
         background-color: whitesmoke;
         box-shadow:5px 5px 5px 1px lightgrey;
@@ -140,27 +141,29 @@ section.concept{
 
         &:hover {
             background-color: rgb(242, 231, 245);
-            i:hover{
+            i{
                 color:$color-primary;
             }
         }
         
-        & i{
+        i{
             padding-left:8px;
         }
-        & p{
+        span{
             padding:0 40px 0 20px;
             font-weight:bold;
             font-size:1.5em;
         }
     }
-    & span{
+    .cercle{
         border-radius: 50%;
         background-color:$color-primary;
         color:white;
         padding:8px;
         position:relative;
-        right:10px;    
+        right:10px; 
+        width:6%;
+        height:40px;   
     }
 }
 
@@ -174,7 +177,7 @@ section.concept{
         justify-content: space-evenly;    
     }
 
-    & .titre{
+    .titre{
         @media (min-width: 992px) {
             width: -webkit-fill-available;
             font-size: x-large;
@@ -182,14 +185,14 @@ section.concept{
         }
     }
     
-    & figure{
+    figure{
         margin:16px 0;
         border-radius: 15px;
         background:white;
         box-shadow:5px 5px 5px 1px lightgrey ;
         
     
-        &  span{
+        span{
             position: absolute;
             right:30px;
             padding:8px;
@@ -201,14 +204,14 @@ section.concept{
             border-radius: 3px;
         }
     }
-    & h3, p{
+    h3, p{
       margin:0;
       padding:0 10px ;
     }
-    & p{
+    p{
         padding-top: 5px;
       }
-    & i{
+    i{
         color:rgb(77, 73, 73);
         padding-right:10px;    
     }
@@ -217,10 +220,9 @@ section.concept{
         background-clip:text;
         -webkit-background-clip:text;
         color:transparent;
-        width:100%;
     }*/
 
-    & figcaption{
+    figcaption{
         font-size:1.2em;
         padding:15px;
         display: flex;
@@ -235,7 +237,7 @@ section.concept{
             padding:30px;
           }
     }
-        & img{
+        img{
         width:100%;
         height:190px;
         border-radius: 15px  15px 0 0;
@@ -251,7 +253,7 @@ footer{
     color:white;
     padding:40px;
 
-    &.footer{
+    .footer{
         @media (min-width: 992px) {
             display: flex;
             align-items: center;
@@ -273,11 +275,8 @@ footer{
     ul{
         list-style-type: none;
         padding-left:0;
-
-       
-
         i{
-            padding-right:30px;
+            padding-right:15px;
             display:flex;
             justify-content: center;
         }
