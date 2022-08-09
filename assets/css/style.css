@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-html h1, html span, html p, html li, body h1, body span, body p, body li {
+html h1, html span, html p, html li, html input, body h1, body span, body p, body li, body input {
   font-family: "Roboto", sans-serif;
 }
 html .prez a, body .prez a {
@@ -23,19 +23,33 @@ header {
   text-align: center;
 }
 header img {
-  width: 40%;
+  width: 50%;
+  height: 100px;
   padding: 20px 0;
+}
+@media (min-width: 992px) {
+  header img {
+    width: 30%;
+  }
 }
 
 nav.recherches {
   display: flex;
   flex-direction: column;
+  font-size: 1.3em;
+}
+@media (min-width: 992px) {
+  nav.recherches {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #99E2D0;
+  }
 }
 nav.recherches .lieux {
   background-color: rgb(233, 232, 232);
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 25px;
   box-shadow: inset 2px 13px 5px -10px #c9c7c7;
 }
 nav.recherches .lieux i {
@@ -44,7 +58,7 @@ nav.recherches .lieux i {
 nav.recherches .lieux input {
   border: none;
   background-color: rgb(233, 232, 232);
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 nav.recherches .decouverte {
@@ -54,6 +68,11 @@ nav.recherches .decouverte {
   text-align: center;
   background-color: whitesmoke;
   padding-bottom: 60px;
+}
+@media (min-width: 992px) {
+  nav.recherches .decouverte {
+    background-color: white;
+  }
 }
 nav.recherches .decouverte h1 {
   padding: 0px 40px;
@@ -65,16 +84,39 @@ nav.recherches .decouverte span {
 }
 nav.recherches .decouverte .explorer {
   border-radius: 50px;
-  padding: 0px 25px;
+  padding: 0px 45px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border: none;
   font-size: 1em;
-  font-weight: bold;
 }
 
 section.concept {
   padding: 20px;
+}
+@media (min-width: 992px) {
+  section.concept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  section.concept .bloc {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  section.concept .contour {
+    padding: 10px 40px;
+  }
+}
+@media (min-width: 992px) {
+  section.concept .titre {
+    width: -webkit-fill-available;
+    font-size: x-large;
+    text-align: center;
+  }
 }
 section.concept button {
   border-radius: 20px;
@@ -87,10 +129,15 @@ section.concept button {
   align-items: center;
   width: 100%;
 }
+@media (min-width: 992px) {
+  section.concept button {
+    padding: 10px;
+  }
+}
 section.concept button:hover {
   background-color: rgb(242, 231, 245);
 }
-section.concept button i:hover {
+section.concept button:hover i:hover {
   color: #9356DC;
 }
 section.concept button i {
@@ -99,7 +146,7 @@ section.concept button i {
 section.concept button p {
   padding: 0 40px 0 20px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 section.concept span {
   border-radius: 50%;
@@ -113,6 +160,28 @@ section.concept span {
 .prez {
   background: rgb(233, 232, 232);
   padding: 40px 15px;
+  /*transition: all .2s ease-in-out;*/
+  /*i:hover{
+      background:-webkit-linear-gradient(top, $color-primary 100%, $color-secondary 100%);
+      background-clip:text;
+      -webkit-background-clip:text;
+      color:transparent;
+      width:100%;
+  }*/
+}
+@media (min-width: 992px) {
+  .prez {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .prez .titre {
+    width: -webkit-fill-available;
+    font-size: x-large;
+    text-align: center;
+  }
 }
 .prez figure {
   margin: 16px 0;
@@ -142,12 +211,6 @@ section.concept span {
   color: rgb(77, 73, 73);
   padding-right: 10px;
 }
-.prez i:hover {
-  background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 .prez figcaption {
   font-size: 1.2em;
   padding: 15px;
@@ -156,11 +219,22 @@ section.concept span {
   justify-content: space-between;
   align-items: center;
 }
-.prez .restau img {
+@media (min-width: 992px) {
+  .prez .restau {
+    width: 50%;
+    padding: 30px;
+  }
+}
+.prez img {
   width: 100%;
   height: 190px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+}
+@media (min-width: 992px) {
+  .prez img {
+    height: 450px;
+  }
 }
 
 footer {
@@ -168,8 +242,21 @@ footer {
   color: white;
   padding: 40px;
 }
+@media (min-width: 992px) {
+  footer.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  footer.footer .ligne {
+    display: inherit;
+  }
+}
 footer img {
-  width: 30%;
+  width: auto;
+  height: 30px;
   filter: brightness(20);
 }
 footer ul {
@@ -183,7 +270,12 @@ footer ul i {
 }
 footer ul li {
   padding: 10px 0;
-  font-size: 1.4em;
+  font-size: 1em;
+}
+@media (min-width: 992px) {
+  footer ul .espacemementDesktop {
+    padding-right: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
