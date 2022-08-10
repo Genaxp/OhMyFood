@@ -1,0 +1,15 @@
+.cercle{
+    border-radius: 50%;        
+    background-color:$color-primary;
+    color:white;
+    position:relative;
+    right:10px; 
+    width: 5%;
+    height:47px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 992px) {  
+        right:30px;       
+    }  
+}

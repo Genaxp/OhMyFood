@@ -1,7 +1,14 @@
 @import './Utils/variables';
 @import './Utils/mixins';
+@import './base/header';
+@import './base/footer';
+@import './base/navigateur';
 @import './base/structure';
-@import './Composants/components';
+@import './Composants/cercle';
+@import './Composants/button';
+@import './Composants/heart';
+@import './Composants/plat';
+@import './Composants/resto';
 @import './Pages/home';
 @import './Pages/restaurant1.scss';
 
