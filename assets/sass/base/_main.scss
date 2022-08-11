@@ -1,0 +1,220 @@
+//nav
+.recherches{
+    display: flex;
+    flex-direction: column;
+    font-size:1.3em;
+
+    @media (min-width: 992px) {
+        display:flex;
+        flex-direction: column-reverse;
+        background-color:$color-terciar;
+    }
+}
+
+.lieux{
+    background-color:rgb(233, 232, 232);
+     display:flex;
+     justify-content: center;
+    padding: 25px;
+    box-shadow: inset 2px 13px 5px -10px #c9c7c7;
+     i{
+         padding:0 20px;
+    }
+     input{
+        border:none;
+        background-color:rgb(233, 232, 232);            
+        font-size:1.1em;
+        font-weight:bold;
+    }    
+}
+    
+.decouverte{ 
+    display:flex;
+    flex-direction: column;       
+    align-items: center;
+    text-align: center;
+    background-color:whitesmoke;
+    padding-bottom:60px;
+        @media (min-width: 992px) {
+            background-color:white; 
+        }
+    h1{
+        padding:0px 40px;
+        margin-top:40px;
+    }
+    p{
+        padding:0px 40px;
+        margin-bottom:20px;
+    }
+}
+
+ //FONCTIONNEMENT   
+ .concept-marge{
+    padding:20px;
+
+    @media (min-width: 992px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+ }
+
+.bloc{
+    @media (min-width: 768px) {
+        display:flex;
+    }
+}
+.contour{
+    @media (min-width: 768px) {
+        padding:10px 40px;
+    }
+}
+    
+//RESTAURANTS
+.prez{
+    background:rgb(233, 232, 232);
+    padding:40px 15px;
+    
+    @media (min-width: 992px) {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;    
+    }
+    figure{
+        margin:16px 0;
+        border-radius: 15px;
+        background:white;
+        box-shadow:5px 5px 5px 1px lightgrey ;
+        //début animation
+        cursor:pointer;
+        overflow:hidden;
+        transition:transform 450ms,background-color 250ms 150ms;
+        &:hover{
+            transform:scale(1.05);
+        }
+        //fin anim
+    }
+    h3, p{
+      margin:0;
+      padding:0 10px ;
+    }
+    p{
+        padding-top: 5px;
+      }
+    figcaption{
+        font-size:1.2em;
+        padding:15px;
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+        img{
+        width:100%;
+        height:190px;
+        border-radius: 15px  15px 0 0;
+        object-fit:cover; 
+        @media (min-width: 992px) {
+            height:250px;
+        }
+    }    
+}
+.prez a{
+    text-decoration: none;
+    color: black;
+}
+.etiquette{
+    background-color: $color-terciar;
+    color:#259478;
+    font-size:1.3em;
+    font-weight: bold;
+    position:absolute;
+    right:10px;
+    margin:15px;
+    
+
+    padding:5px 15px;
+    border-radius: 5px;
+
+}
+.restau-carte{
+    @media (min-width: 992px) {
+        width:50%;
+        padding:30px;
+      }
+}
+
+//PAGES RESTAU
+
+section{
+    background-color: whitesmoke;
+    img{
+        width:100%;
+        height:250px;
+        object-fit: cover;
+        @media (min-width: 768px) {
+           height:250px;
+        }
+        @media (min-width: 992px) {  
+            height: 365px;
+           
+        }
+    }
+}
+
+.blocPage{
+        background-color:whitesmoke;
+        position: relative;
+        bottom: 70px;
+        padding:10px;
+
+        @media (min-width: 768px) {
+           .colonne{
+            margin: 0 80px;
+           }
+           .blocPage > :nth-child(4){
+            display: flex;
+           }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .colonne{
+                margin: 0;
+                padding: 0;
+                width:31%;
+            }        
+        }
+        h2{
+            border-bottom: 4px solid $color-terciar;
+            width:10%;
+            color:rgb(112, 111, 111);
+
+            @media (min-width: 768px) {
+                width:100%;    
+            }
+        }
+}
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    */
+    @media (min-width: 768px) {
+        padding:0;   
+    }
+    span{
+        color:rgb(94, 94, 94);
+        opacity: 100%;
+        width: 7rem;
+        &:active{
+            transition: transform 0.4s ease-in-out;
+            width: 0.4s ease-in-out; 
+            opacity: 0.4s ease-in-out;
+        }
+    }
+}
+
