@@ -62,7 +62,14 @@
 .bloc{
     @media (min-width: 768px) {
         display:flex;
+        flex-direction: column;
+
     }
+    @media (min-width: 992px) {
+        display:flex;
+        flex-direction: row;
+    }
+
 }
 .contour{
     @media (min-width: 768px) {
