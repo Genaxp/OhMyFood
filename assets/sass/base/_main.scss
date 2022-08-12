@@ -1,6 +1,6 @@
 //nav
 .recherches{
-    background-color: whitesmoke;
+    background-color: $color-smokey;
     @media (min-width: 768px) {
         display:flex;
         flex-direction: column-reverse;
@@ -9,7 +9,7 @@
 }
 
 .lieux{
-    background-color:rgb(233, 232, 232);
+    background-color:$color-backgrey;
      display:flex;
      justify-content: center;
     padding: 25px;
@@ -19,7 +19,7 @@
     }
      input{
         border:none;
-        background-color:rgb(233, 232, 232);            
+        background-color:$color-backgrey;            
         font-size:1.1em;
         font-weight:bold;
     }    
@@ -34,7 +34,7 @@
     padding-bottom:60px;
     @media (min-width: 768px) {     
         background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?cs=srgb&dl=pexels-rachel-claire-4577179.jpg&fm=jpg);  
-        color: white;
+        color: $color-neutre;
         font-size: large;
     }
     @media (min-width: 992px) {     
@@ -66,7 +66,7 @@
  //FONCTIONNEMENT   
  .concept-marge{
     padding:50px;
-    background-color: white;
+    background-color:$color-neutre;
 
     @media (min-width: 992px) {
         display:flex;
@@ -95,7 +95,7 @@
     
 //RESTAURANTS
 .prez{
-    background:rgb(233, 232, 232);
+    background:$color-backgrey;
     padding:40px 15px;
     
     @media (min-width: 992px) {
@@ -103,12 +103,12 @@
         flex-wrap:wrap;
         justify-content: space-evenly;
         padding:0 15px; 
-        background:white;   
+        background:$color-neutre;   
     }
     figure{
         margin:16px 0;
         border-radius: 15px;
-        background:white;
+        background:$color-neutre;
         box-shadow:5px 5px 5px 1px lightgrey ;
         //début animation
         cursor:pointer;
@@ -177,7 +177,7 @@
 //PAGES RESTAU
 
 section{
-    background-color: whitesmoke;
+    background-color: $color-smokey;
     img{
         width:100%;
         height:250px;
@@ -193,7 +193,7 @@ section{
 }
 
 .blocPage{
-        background-color:whitesmoke;
+        background-color:$color-smokey;
         position: relative;
         bottom: 70px;
         padding:10px;
@@ -237,8 +237,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    */
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    
     @media (min-width: 768px) {
         padding:0;   
     }

@@ -30,12 +30,12 @@ header img {
 
 footer {
   background-color: rgb(46, 44, 44);
-  color: white;
+  color: #ffffff;
   padding: 40px;
 }
 footer a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 footer img {
   width: auto;
@@ -73,7 +73,7 @@ footer ul li {
 }
 
 .recherches {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 @media (min-width: 768px) {
   .recherches {
@@ -83,7 +83,7 @@ footer ul li {
 }
 
 .lieux {
-  background-color: rgb(233, 232, 232);
+  background-color: #e9e8e8;
   display: flex;
   justify-content: center;
   padding: 25px;
@@ -94,7 +94,7 @@ footer ul li {
 }
 .lieux input {
   border: none;
-  background-color: rgb(233, 232, 232);
+  background-color: #e9e8e8;
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -109,7 +109,7 @@ footer ul li {
 @media (min-width: 768px) {
   .decouverte {
     background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?cs=srgb&dl=pexels-rachel-claire-4577179.jpg&fm=jpg);
-    color: white;
+    color: #ffffff;
     font-size: large;
   }
 }
@@ -141,7 +141,7 @@ footer ul li {
 }*/
 .concept-marge {
   padding: 50px;
-  background-color: white;
+  background-color: #ffffff;
 }
 @media (min-width: 992px) {
   .concept-marge {
@@ -171,7 +171,7 @@ footer ul li {
 }
 
 .prez {
-  background: rgb(233, 232, 232);
+  background: #e9e8e8;
   padding: 40px 15px;
 }
 @media (min-width: 992px) {
@@ -180,13 +180,13 @@ footer ul li {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 15px;
-    background: white;
+    background: #ffffff;
   }
 }
 .prez figure {
   margin: 16px 0;
   border-radius: 15px;
-  background: white;
+  background: #ffffff;
   box-shadow: 5px 5px 5px 1px lightgrey;
   cursor: pointer;
   overflow: hidden;
@@ -254,7 +254,7 @@ footer ul li {
 }
 
 section {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 section img {
   width: 100%;
@@ -273,7 +273,7 @@ section img {
 }
 
 .blocPage {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   position: relative;
   bottom: 70px;
   padding: 10px;
@@ -317,8 +317,7 @@ section img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  */
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
   .infos {
@@ -360,11 +359,11 @@ html {
 .cercle {
   border-radius: 50%;
   background-color: #9356DC;
-  color: white;
+  color: #ffffff;
   position: relative;
   right: 10px;
-  width: 5%;
-  height: 47px;
+  width: 0%;
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -377,21 +376,21 @@ html {
 .btn-explorer {
   border-radius: 50px;
   padding: 20px 50px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  color: white;
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  color: #ffffff;
   border: none;
   font-size: 1em;
 }
 
 .btn-fonction {
   border-radius: 20px;
-  background-color: whitesmoke;
-  box-shadow: 5px 5px 5px 1px lightgrey;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 5px 1px #f5f5f5;
   border: none;
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
   padding: 20px 0px;
-  align-items: center;
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -419,11 +418,11 @@ html {
 }
 
 .btn-menu {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px rgb(221, 221, 221);
   padding: 15px;
-  margin-bottom: 10px;
+  margin: 20px 0;
   cursor: pointer;
   overflow: hidden;
   transition: transform 250ms, background-color 250ms 150ms;
@@ -459,20 +458,20 @@ html {
 .btn-commander button {
   border-radius: 50px;
   padding: 20px 50px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  color: white;
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  color: #ffffff;
   border: none;
   font-size: 1em;
   font-weight: bold;
 }
 
 .heart {
-  background-color: white;
+  background-color: #ffffff;
   position: relative;
 }
 
 .heart-fill-1 {
-  background-color: linear-gradient(#9356DC, #FF79DA);
+  background-color: linear-gradient(to bottom right, #9356DC, #FF79DA);
   transition: all 0.3s linear 0s;
   width: 0;
   height: 0;
@@ -483,7 +482,7 @@ html {
 
 .heart-fill-2 {
   transition: all 0.3s linear 0s;
-  background-color: linear-gradient(#9356DC, #FF79DA);
+  background-color: linear-gradient(to bottom right, #9356DC, #FF79DA);
   width: 0;
   height: 0;
   position: absolute;
@@ -554,7 +553,7 @@ html {
   justify-content: space-around;
   align-items: center;
   border-radius: 25px 25px 0 0;
-  background: whitesmoke;
+  background: #f5f5f5;
   position: relative;
   bottom: 50px;
   padding: 40px;

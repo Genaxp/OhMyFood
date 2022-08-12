@@ -1,12 +1,12 @@
 //accueil+restau
 .heart{
-    background-color:white;
+    background-color:$color-neutre;
 
     position: relative;
 	
 }
 .heart-fill-1{
-    background-color:linear-gradient( $color-primary,$color-secondary);
+    background-color:$color-degrade-btn;
     transition: all 0.3s linear 0s;
     width: 0;
     height: 0;
@@ -17,7 +17,7 @@
 
 .heart-fill-2{
     transition: all 0.3s linear 0s;
-    background-color:linear-gradient($color-primary,$color-secondary); ;
+    background-color:$color-degrade-btn;
     width: 0;
     height: 0;
     position: absolute;
