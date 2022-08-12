@@ -457,41 +457,40 @@ html {
   font-weight: bold;
 }
 
-.heart {
-  background-color: #ffffff;
-  position: relative;
+/*.heart{
+    background-color:$color-neutre;
+
+    position: relative;
+
+}
+.heart-fill-1{
+    background-color:$color-degrade-btn;
+    transition: all 0.3s linear 0s;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.heart-fill-1 {
-  background-color: linear-gradient(to bottom right, #9356DC, #FF79DA);
-  transition: all 0.3s linear 0s;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
+.heart-fill-2{
+    transition: all 0.3s linear 0s;
+    background-color:$color-degrade-btn;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-
-.heart-fill-2 {
-  transition: all 0.3s linear 0s;
-  background-color: linear-gradient(to bottom right, #9356DC, #FF79DA);
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
 .heart:hover .heart-fill-1 {
-  width: 100%;
-  height: 50%;
+    width: 100%;
+	height: 50%;
 }
 
 .heart:hover .heart-fill-2 {
-  width: 100%;
-  height: 50%;
-}
-
+    width: 100%;
+	height: 50%;
+}*/
 /*&:hover{
     background:-webkit-linear-gradient( $color-primary,$color-secondary);
     background-clip:text;
@@ -517,7 +516,7 @@ html {
 .heart:hover .heart-remplissage {
    opacity: 1;
 }*/
-/*&:hover{
+/*heart:hover{
    background-color: linear-gradient(to right,$color-primary,$color-secondary); 
 }*/
 /*cursor: pointer;
