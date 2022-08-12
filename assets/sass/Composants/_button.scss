@@ -14,9 +14,10 @@
     background-color: $color-smokey;
     box-shadow:5px 5px 5px 1px $color-smokey;
     border:none;
-                
+
     display: flex;
     align-items: center;
+
     margin-bottom:20px;
     padding:20px 0px;
     
@@ -54,11 +55,10 @@
     padding:15px;
     margin:20px 0;
 
+
    cursor:pointer;
     overflow:hidden;
     transition:transform 250ms,background-color 250ms 150ms;
-
-
     &:hover{
         transform:scale(1.05);
     }
@@ -79,6 +79,7 @@
 .btn-commander{
     display:flex;
     justify-content: center;
+    
     padding-top:40px;
 
     @media (min-width: 768px) {

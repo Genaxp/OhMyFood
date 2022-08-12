@@ -317,7 +317,6 @@ section img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
   .infos {
@@ -326,13 +325,6 @@ section img {
 }
 .infos span {
   color: rgb(94, 94, 94);
-  opacity: 100%;
-  width: 7rem;
-}
-.infos span:active {
-  transition: transform 0.4s ease-in-out;
-  width: 0.4s ease-in-out;
-  opacity: 0.4s ease-in-out;
 }
 
 html, body {
