@@ -43,8 +43,9 @@
     }
        
     h1{
-        padding:0px 40px;
+        padding:10px 40px;
         margin-top:40px;
+        font-size:1.5em;
         /*@media (min-width: 768px) {
             ;
     }*/
@@ -52,6 +53,7 @@
     p{
         padding:0px 40px;
         margin-bottom:20px;
+        font-size: 1.2em;
     }
 }
 /*.fond{
@@ -63,7 +65,7 @@
 
  //FONCTIONNEMENT   
  .concept-marge{
-    padding:20px;
+    padding:50px;
     background-color: white;
 
     @media (min-width: 992px) {
@@ -99,7 +101,9 @@
     @media (min-width: 992px) {
         display:flex;
         flex-wrap:wrap;
-        justify-content: space-evenly;    
+        justify-content: space-evenly;
+        padding:0 15px; 
+        background:white;   
     }
     figure{
         margin:16px 0;
@@ -156,6 +160,11 @@
 
     padding:5px 15px;
     border-radius: 5px;
+    @media (min-width:992px){
+        position:relative;
+        display: flex;
+        justify-content:center;
+    }
 
 }
 .restau-carte{
@@ -189,15 +198,10 @@ section{
         bottom: 70px;
         padding:10px;
 
-        @media (min-width: 768px) {
-           .colonne{
-            margin: 0 80px;
-           }
-           .blocPage > :nth-child(4){
+    .blocPage > :nth-child(4){
             display: flex;
            }
-        }
-
+    
         @media (min-width: 992px) {
             display: flex;
             justify-content: space-evenly;
@@ -218,6 +222,17 @@ section{
             }
         }
 }
+
+.colonne{
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+        .colonne{
+         margin: 0 80px;
+        }
+    }
+}
+
 .infos{
     display: flex;
     align-items: center;

@@ -120,8 +120,9 @@ footer ul li {
   }
 }
 .decouverte h1 {
-  padding: 0px 40px;
+  padding: 10px 40px;
   margin-top: 40px;
+  font-size: 1.5em;
   /*@media (min-width: 768px) {
           ;
   }*/
@@ -129,6 +130,7 @@ footer ul li {
 .decouverte p {
   padding: 0px 40px;
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 /*.fond{
@@ -138,7 +140,7 @@ footer ul li {
     }
 }*/
 .concept-marge {
-  padding: 20px;
+  padding: 50px;
   background-color: white;
 }
 @media (min-width: 992px) {
@@ -177,6 +179,8 @@ footer ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0 15px;
+    background: white;
   }
 }
 .prez figure {
@@ -234,6 +238,13 @@ footer ul li {
   padding: 5px 15px;
   border-radius: 5px;
 }
+@media (min-width: 992px) {
+  .etiquette {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 @media (min-width: 992px) {
   .restau-carte {
@@ -267,13 +278,8 @@ section img {
   bottom: 70px;
   padding: 10px;
 }
-@media (min-width: 768px) {
-  .blocPage .colonne {
-    margin: 0 80px;
-  }
-  .blocPage .blocPage > :nth-child(4) {
-    display: flex;
-  }
+.blocPage .blocPage > :nth-child(4) {
+  display: flex;
 }
 @media (min-width: 992px) {
   .blocPage {
@@ -295,6 +301,15 @@ section img {
 @media (min-width: 768px) {
   .blocPage h2 {
     width: 100%;
+  }
+}
+
+.colonne {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .colonne .colonne {
+    margin: 0 80px;
   }
 }
 
@@ -542,6 +557,7 @@ html {
   background: whitesmoke;
   position: relative;
   bottom: 50px;
+  padding: 40px;
   font-family: "Shrikhand";
 }
 @media (min-width: 768px) {
@@ -573,11 +589,14 @@ html {
 @media (min-width: 768px) {
   .prez h2 {
     background-color: #99E2D0;
-    border-radius: 10px 10px 0 0;
+    border-radius: 30px 30px 0 0;
     padding: 20px 5px;
   }
 }
 
+.concept-marge h2 {
+  padding-bottom: 30px;
+}
 @media (min-width: 768px) {
   .concept-marge h2 {
     background-color: #99E2D0;
