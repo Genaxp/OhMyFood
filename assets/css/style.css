@@ -73,15 +73,12 @@ footer ul li {
 }
 
 .recherches {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.3em;
+  background-color: whitesmoke;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .recherches {
     display: flex;
     flex-direction: column-reverse;
-    background-color: #99E2D0;
   }
 }
 
@@ -107,25 +104,42 @@ footer ul li {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: whitesmoke;
   padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .decouverte {
+    background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?cs=srgb&dl=pexels-rachel-claire-4577179.jpg&fm=jpg);
+    color: white;
+    font-size: large;
+  }
 }
 @media (min-width: 992px) {
   .decouverte {
-    background-color: white;
+    font-size: x-large;
+    height: 350px;
   }
 }
 .decouverte h1 {
   padding: 0px 40px;
   margin-top: 40px;
+  /*@media (min-width: 768px) {
+          ;
+  }*/
 }
 .decouverte p {
   padding: 0px 40px;
   margin-bottom: 20px;
 }
 
+/*.fond{
+    @media (min-width: 768px) {
+        background-image: url(restau-rachel-pexels.png);
+
+    }
+}*/
 .concept-marge {
   padding: 20px;
+  background-color: white;
 }
 @media (min-width: 992px) {
   .concept-marge {
@@ -309,8 +323,6 @@ section img {
 
 html, body {
   font-family: "Roboto", "Shrikhand", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 html span, html p, html li, html input, body span, body p, body li, body input {
   font-family: "Roboto", sans-serif;
@@ -320,8 +332,14 @@ header, main, footer {
   max-width: 100%;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .cercle {
@@ -435,6 +453,7 @@ header, main, footer {
 
 .heart {
   background-color: white;
+  position: relative;
 }
 
 .heart-fill-1 {
