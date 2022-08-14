@@ -1,3 +1,30 @@
+//anim coeur
+.heart{
+    background-color:transparent;
+    position: relative;
+    z-index: 1; 
+  
+}
+
+.heart:hover{
+        &::after{
+            opacity:1;   
+        } 
+}
+.heart::after{
+    content:"";
+    position: absolute;        
+    top:0;
+    right:0;
+    bottom:0;        
+    left:0;
+    background:$color-degrade-btn;
+    opacity:0;
+    z-index:-1;
+    overflow: hidden;
+}
+
+
 //anim descente page restau
 .anin-menu{
     transition:all 0.8s;
@@ -9,12 +36,73 @@
         transform:translateY(0px);
         opacity:0;
     }
+    25%{
+        transform:translateY(50px)
+    }
 
+    50%{
+        transform:translateY(50px);
+        
+    }
+    
     100%{
         transform:translateY(0px);
         opacity: 1;
     }
 }
-//anim loader
-
 //anim check
+
+.box i{
+    color:white;
+
+    font-size:25px;
+    transition:all 0.4s 0.2s ease-in-out;
+    
+}
+.checky{
+    &:active + .box-anom{
+        transform:translateX(100px,0);
+        & > .box-rotation{
+            transform: (0deg);
+        }
+    }
+}
+.boxy{
+    margin:20px;
+    width:10%;
+    background:red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10%;
+    transition:all 0.4s ease-in-out;
+}
+/*.box-anom{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+}*/
+
+/*.rotation{
+   transform:rotate(-180deg);
+   transition: transform 500ms ease-in-out; 
+}*/
+
+//anim loader
+@keyframes loader{
+    100%{
+        opacity:0;
+        z-index:-10;
+    }
+}
+
