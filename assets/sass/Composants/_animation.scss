@@ -1,0 +1,20 @@
+//anim descente page restau
+.anin-menu{
+    transition:all 0.8s;
+    animation:slideDown 1s; 
+}
+
+@keyframes slideDown{
+    0%{
+        transform:translateY(0px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+//anim loader
+
+//anim check

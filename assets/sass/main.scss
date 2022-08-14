@@ -1,21 +1,16 @@
 @import './Utils/variables';
 @import './Utils/mixins';
+
 @import './base/header';
 @import './base/footer';
 @import './base/main';
 @import './base/structure';
+
 @import './Composants/cercle';
 @import './Composants/button';
 @import './Composants/heart';
 @import './Composants/typo';
+@import './Composants/animation';
+
 @import './Pages/home';
 @import './Pages/restaurant1.scss';
-
-
-
-
-
-
-
-
-

@@ -457,88 +457,30 @@ html {
   font-weight: bold;
 }
 
-/*.heart{
-    background-color:$color-neutre;
-
-    position: relative;
-
-}
-.heart-fill-1{
-    background-color:$color-degrade-btn;
-    transition: all 0.3s linear 0s;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.heart-fill-2{
-    transition: all 0.3s linear 0s;
-    background-color:$color-degrade-btn;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.heart:hover .heart-fill-1 {
-    width: 100%;
-	height: 50%;
-}
-
-.heart:hover .heart-fill-2 {
-    width: 100%;
-	height: 50%;
-}*/
-/*&:hover{
-    background:-webkit-linear-gradient( $color-primary,$color-secondary);
-    background-clip:text;
-    -webkit-background-clip:text;    
-    color:transparent;    
-}*/
-/* position:relative;
-    z-index: 1; 
-    padding-right:20px;
-
-
-}
-.heart-remplissage{
-    transition: all  0.3s 0s;
-    background:linear-gradient(to right, $color-primary,$color-secondary);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-}
-
-.heart:hover .heart-remplissage {
-   opacity: 1;
-}*/
-/*heart:hover{
-   background-color: linear-gradient(to right,$color-primary,$color-secondary); 
-}*/
-/*cursor: pointer;
+.heart {
+  background-color: transparent;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
+}
 
-  &:hover{
-      &::after{
-          opacity:1;
-      } 
-  }
-  &::after{
-      content:"";
-      position: absolute;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      background:linear-gradient(to right, $color-primary,$color-secondary);
-      opacity:0;
-      z-index:-1;
-      transition: opacity 250ms;*/
+.heart:hover::after {
+  opacity: 1;
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
+  transform: scale(1.2);
+}
+
 .titre-menu {
   display: flex;
   justify-content: space-around;
@@ -592,6 +534,22 @@ html {
     background-color: #99E2D0;
     border-radius: 30px 30px 0 0;
     padding: 20px 5px;
+  }
+}
+
+.anin-menu {
+  transition: all 0.8s;
+  animation: slideDown 1s;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
