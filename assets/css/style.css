@@ -108,7 +108,7 @@ footer ul li {
 }
 @media (min-width: 768px) {
   .decouverte {
-    background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?cs=srgb&dl=pexels-rachel-claire-4577179.jpg&fm=jpg);
+    background: url(./../images/imgfond/restau-rachel-pexels.png) center center/cover;
     color: #ffffff;
     font-size: large;
   }
@@ -124,7 +124,7 @@ footer ul li {
   margin-top: 40px;
   font-size: 1.5em;
   /*@media (min-width: 768px) {
-          ;
+      ;
   }*/
 }
 .decouverte p {
@@ -354,10 +354,12 @@ html {
   color: #ffffff;
   position: relative;
   right: 10px;
-  width: 0%;
+  width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 !important;
 }
 @media (min-width: 992px) {
   .cercle {
@@ -368,7 +370,7 @@ html {
 .btn-explorer {
   border-radius: 50px;
   padding: 20px 50px;
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   color: #ffffff;
   border: none;
   font-size: 1em;
@@ -450,35 +452,11 @@ html {
 .btn-commander button {
   border-radius: 50px;
   padding: 20px 50px;
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   color: #ffffff;
   border: none;
   font-size: 1em;
   font-weight: bold;
-}
-
-.heart {
-  background-color: transparent;
-  position: relative;
-  z-index: 1;
-}
-
-.heart:hover::after {
-  opacity: 1;
-}
-
-.heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 400ms;
-  transform: scale(1.2);
 }
 
 .titre-menu {
@@ -537,6 +515,28 @@ html {
   }
 }
 
+.heart {
+  position: relative;
+  color: white;
+}
+
+.heart-fill {
+  transition: all 0.3s linear 0s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.heart:hover .heart-fill {
+  transform: scale(1.3);
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .anin-menu {
   transition: all 0.8s;
   animation: slideDown 1s;
@@ -547,10 +547,93 @@ html {
     transform: translateY(0px);
     opacity: 0;
   }
+  25% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+/*.boxy i{
+    color:white;
+    font-size:25px;
+    background-color:transparent;
+    position: relative;
+    z-index: 1; 
+
+}
+.boxy i{
+    &:active{
+        &::after{
+        transform:translateX(100px,0);
+        }
+        & > .box-rotation{
+            transform: (0deg);
+        }
+    }
+}
+
+.boxy i::after{
+    content:"";
+    position: absolute;        
+    top:0;
+    right:0;
+    bottom:0;        
+    left:0;
+    background:$color-degrade-btn;
+    opacity:0;
+    z-index:-1;
+
+}*/
+/*.checky{
+    margin:20px;
+    width:10%;
+    background:red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10%;
+    transition:all 0.4s ease-in-out;
+}*/
+/*.rotation{
+   transform:rotate(-180deg);
+   transition: transform 500ms ease-in-out; 
+}*/
+.box {
+  margin: 0px;
+  padding: 30px;
+  background: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  color: white;
+}
+
+.btn-menu:hover .box {
+  animation: check 0.4s ease-in-out 1s;
+  transform: translateX(-50px);
+}
+
+@keyframes check {
+  0% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+/*@keyframes loader{
+    100%{
+        opacity:0;
+        z-index:-10;
+    }
+}*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,28 +1,27 @@
 //anim coeur
 .heart{
-    background-color:transparent;
-    position: relative;
-    z-index: 1; 
-  
+    position:relative;
+    color:white; 
+} 
+
+.heart-fill{
+    transition:all 0.3s linear 0s;
+    position:absolute;
+    left:0;
+    bottom:0; 
 }
 
-.heart:hover{
-        &::after{
-            opacity:1;   
-        } 
-}
-.heart::after{
-    content:"";
-    position: absolute;        
-    top:0;
-    right:0;
-    bottom:0;        
-    left:0;
+.heart:hover .heart-fill{
+    transform:scale(1.3);
+    
     background:$color-degrade-btn;
-    opacity:0;
-    z-index:-1;
-    overflow: hidden;
-}
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}   
+
 
 
 //anim descente page restau
@@ -39,12 +38,10 @@
     25%{
         transform:translateY(50px)
     }
-
     50%{
         transform:translateY(50px);
         
     }
-    
     100%{
         transform:translateY(0px);
         opacity: 1;
@@ -52,22 +49,39 @@
 }
 //anim check
 
-.box i{
+/*.boxy i{
     color:white;
-
     font-size:25px;
-    transition:all 0.4s 0.2s ease-in-out;
+    background-color:transparent;
+    position: relative;
+    z-index: 1; 
     
 }
-.checky{
-    &:active + .box-anom{
+.boxy i{
+    &:active{
+        &::after{
         transform:translateX(100px,0);
+        }
         & > .box-rotation{
             transform: (0deg);
         }
     }
 }
-.boxy{
+
+.boxy i::after{
+    content:"";
+    position: absolute;        
+    top:0;
+    right:0;
+    bottom:0;        
+    left:0;
+    background:$color-degrade-btn;
+    opacity:0;
+    z-index:-1;
+   
+}*/
+
+/*.checky{
     margin:20px;
     width:10%;
     background:red;
@@ -76,33 +90,45 @@
     justify-content: center;
     border-radius:10%;
     transition:all 0.4s ease-in-out;
-}
-/*.box-anom{
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear .6s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 100%;
 }*/
+
 
 /*.rotation{
    transform:rotate(-180deg);
    transition: transform 500ms ease-in-out; 
 }*/
+.box{
+    margin:0px;
+    padding:30px;
+    background:$color-terciar;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10%;
+    color:white;
+   
+}
+
+.btn-menu:hover .box{
+    animation: check 0.4s ease-in-out 1s;
+    transform:translateX(-50px);
+}
+  @keyframes check {
+    0% {
+        opacity:0;
+        transform: rotate(0);
+    }
+    100% {
+        opacity:1;
+        transform: rotate(180deg);
+    }
+  }
 
 //anim loader
-@keyframes loader{
+/*@keyframes loader{
     100%{
         opacity:0;
         z-index:-10;
     }
-}
+}*/
 

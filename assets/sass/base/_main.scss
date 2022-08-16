@@ -5,52 +5,52 @@
         display:flex;
         flex-direction: column-reverse;
     }
-    
+
 }
 
 .lieux{
     background-color:$color-backgrey;
-    
+
     display:flex;
-     justify-content: center;
+    justify-content: center;
 
     padding: 25px;
     box-shadow: inset 2px 13px 5px -10px #c9c7c7;
-     i{
-         padding:0 20px;
+    i{
+        padding:0 20px;
     }
-     input{
+    input{
         border:none;
-        background-color:$color-backgrey;            
+        background-color:$color-backgrey;
         font-size:1.1em;
         font-weight:bold;
-    }    
+    }
 }
 
-.decouverte{ 
+.decouverte{
     display:flex;
-    flex-direction: column;       
+    flex-direction: column;
     align-items: center;
     text-align: center;
-   
+
     padding-bottom:60px;
-    @media (min-width: 768px) {     
-        background-image: url(https://images.pexels.com/photos/4577179/pexels-photo-4577179.jpeg?cs=srgb&dl=pexels-rachel-claire-4577179.jpg&fm=jpg);  
+    @media (min-width: 768px) {
+        background: url(./../images/imgfond/restau-rachel-pexels.png) center center / cover;
         color: $color-neutre;
         font-size: large;
     }
-    @media (min-width: 992px) {     
+    @media (min-width: 992px) {
         font-size: x-large;
         height:350px;
     }
-       
+
     h1{
         padding:10px 40px;
         margin-top:40px;
         font-size:1.5em;
         /*@media (min-width: 768px) {
             ;
-    }*/
+        }*/
     }
     p{
         padding:0px 40px;
@@ -63,19 +63,19 @@
         background-image: url(restau-rachel-pexels.png);
 
     }
-}*/   
+}*/
 
- //FONCTIONNEMENT   
- .concept-marge{
+//FONCTIONNEMENT
+.concept-marge{
     padding:50px;
     background-color:$color-neutre;
 
     @media (min-width: 992px) {
         display:flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
     }
- }
+}
 
 .bloc{
     @media (min-width: 768px) {
@@ -94,18 +94,18 @@
         padding:10px 40px;
     }
 }
-    
+
 //RESTAURANTS
 .prez{
     background:$color-backgrey;
     padding:40px 15px;
-    
+
     @media (min-width: 992px) {
         display:flex;
         flex-wrap:wrap;
         justify-content: space-evenly;
-        padding:0 15px; 
-        background:$color-neutre;   
+        padding:0 15px;
+        background:$color-neutre;
     }
     figure{
         margin:16px 0;
@@ -122,12 +122,12 @@
         //fin anim
     }
     h3, p{
-      margin:0;
-      padding:0 10px ;
+        margin:0;
+        padding:0 10px ;
     }
     p{
         padding-top: 5px;
-      }
+    }
     figcaption{
         font-size:1.2em;
         padding:15px;
@@ -137,7 +137,7 @@
         justify-content: space-between;
         align-items: center;
     }
-        img{
+    img{
         width:100%;
         height:190px;
         border-radius: 15px  15px 0 0;
@@ -146,7 +146,7 @@
         @media (min-width: 992px) {
             height:250px;
         }
-    }    
+    }
 }
 .prez a{
     text-decoration: none;
@@ -160,7 +160,7 @@
     position:absolute;
     right:10px;
     margin:15px;
-    
+
 
     padding:5px 15px;
     border-radius: 5px;
@@ -176,7 +176,7 @@
     @media (min-width: 992px) {
         width:50%;
         padding:30px;
-      }
+    }
 }
 
 //PAGES RESTAU
@@ -188,52 +188,52 @@ section{
         height:250px;
         object-fit: cover;
         @media (min-width: 768px) {
-           height:250px;
+            height:250px;
         }
-        @media (min-width: 992px) {  
+        @media (min-width: 992px) {
             height: 365px;
-           
+
         }
     }
 }
 
 .blocPage{
-        background-color:$color-smokey;
-        position: relative;
-        bottom: 70px;
-        padding:10px;
+    background-color:$color-smokey;
+    position: relative;
+    bottom: 70px;
+    padding:10px;
 
     .blocPage > :nth-child(4){
-            display: flex;
-           }
-    
-        @media (min-width: 992px) {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            .colonne{
-                margin: 0;
-                padding: 0;
-                width:31%;
-            }        
-        }
-        h2{
-            border-bottom: 4px solid $color-terciar;
-            width:10%;
-            color:rgb(112, 111, 111);
+        display: flex;
+    }
 
-            @media (min-width: 768px) {
-                width:100%;    
-            }
+    @media (min-width: 992px) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .colonne{
+            margin: 0;
+            padding: 0;
+            width:31%;
         }
+    }
+    h2{
+        border-bottom: 4px solid $color-terciar;
+        width:10%;
+        color:rgb(112, 111, 111);
+
+        @media (min-width: 768px) {
+            width:100%;
+        }
+    }
 }
 
 .colonne{
     margin-bottom: 30px;
-    
+
     @media (min-width: 768px) {
         .colonne{
-         margin: 0 80px;
+            margin: 0 80px;
         }
     }
 }
@@ -242,9 +242,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     @media (min-width: 768px) {
-        padding:0;   
+        padding:0;
     }
     span{
         color:rgb(94, 94, 94);

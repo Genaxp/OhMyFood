@@ -8,4 +8,4 @@ $color-smokey:#f5f5f5;
 $color-backgrey:#e9e8e8;
 
 
-$color-degrade-btn:linear-gradient(to bottom right, $color-primary,$color-secondary);
+$color-degrade-btn:linear-gradient( $color-primary,$color-secondary);
