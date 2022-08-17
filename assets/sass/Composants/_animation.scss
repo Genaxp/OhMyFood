@@ -125,10 +125,12 @@
   }
 
 //anim loader
-/*@keyframes loader{
+@keyframes loader{
     100%{
-        opacity:0;
-        z-index:-10;
+        transform:translateY(-30px);
+        opacity: 0;
+        z-index: 1;
+       
     }
-}*/
+}
 
