@@ -29,6 +29,7 @@
 
     &:hover {
         background-color: rgb(242, 231, 245);
+        z-index:1;
        i{
             color:$color-primary;
         }
@@ -74,6 +75,9 @@
            
     h3, p{
         margin:0;
+    }
+    span{
+        margin-left: 250px;
     }
 }
 
