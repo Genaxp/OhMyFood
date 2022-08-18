@@ -238,16 +238,14 @@ section{
     }
 }
 
-.infos{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    @media (min-width: 768px) {
+
+.infos{
+    padding:10px;
+   
+    /*@media (min-width: 768px) {
         padding:0;
-    }
-    span{
-        color:rgb(94, 94, 94);
-    }
+    } */ 
 }
+
 
