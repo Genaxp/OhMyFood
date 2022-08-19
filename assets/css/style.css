@@ -555,14 +555,13 @@ html {
 
 .heart-fill {
   position: relative;
-  /*
-  background-clip:text ;
-  background: black;
+  color: #ffffff;
+  background-color: black;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: $color-neutre; 
-  -moz-text-fill-color: $color-neutre;
-  border:solid 1px black;*/
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .heart {
@@ -620,7 +619,6 @@ html {
   border-radius: 0 10% 10% 0;
   margin: 0;
   cursor: pointer;
-  /*transition:all 0.4s ease-in-out;*/
 }
 
 .btn-menu:hover .box {
