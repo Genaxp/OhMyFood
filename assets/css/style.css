@@ -437,10 +437,6 @@ html {
   font-weight: bold;
   font-size: 1.5em;
 }
-.btn-fonction span .prez a {
-  text-decoration: none;
-  color: black;
-}
 
 .btn-menu {
   background-color: #ffffff;
@@ -451,20 +447,9 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  /*transition:transform 250ms,background-color 250ms 150ms;*/
 }
 .btn-menu:hover {
   transform: scale(1.05);
-}
-@media (min-width: 768px) {
-  .btn-menu {
-    padding: 15px 75px;
-  }
-}
-@media (min-width: 992px) {
-  .btn-menu {
-    padding: 10px;
-  }
 }
 .btn-menu h3, .btn-menu p {
   margin: 0;
@@ -582,9 +567,9 @@ html {
   -moz-text-fill-color: transparent;
 }
 
-.anin-menu {
+.btn-menu {
   transition: all 0.8s;
-  animation: slideDown 2s;
+  animation: slideDown 3s;
 }
 
 @keyframes slideDown {
@@ -609,8 +594,6 @@ html {
   border-radius: 0 10% 10% 0;
   cursor: pointer;
   opacity: 0;
-}
-.box h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -622,7 +605,6 @@ html {
 }
 
 .btn-menu:hover .box {
-  /*margin-right:0;*/
   opacity: 1;
   animation: check 0.4s ease-in-out 1s;
   transition: transform 700ms;

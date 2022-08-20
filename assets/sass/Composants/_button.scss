@@ -41,38 +41,23 @@
         padding:0 40px 0 20px;
         font-weight:bold;
         font-size:1.5em;
-        .prez a{
-    text-decoration: none;
-    color: black;
-}
     }
-
 }
 //restaurant
 .btn-menu{
     background-color: $color-neutre;
     border-radius:15px;
     box-shadow:5px 5px 5px 1px rgb(221, 221, 221) ;
-    
     margin:20px 0;
   
-   cursor:pointer;
+    cursor:pointer;
     overflow:hidden;
     display:flex;
     justify-content: space-between;
 
-    /*transition:transform 250ms,background-color 250ms 150ms;*/
     &:hover{
         transform:scale(1.05);
-    }
-  
-    @media (min-width: 768px) {
-        padding:15px 75px;   
-    }
-    @media (min-width: 992px) {
-        padding:10px;   
-    }
-           
+    }      
     h3, p{
         margin:0;
         

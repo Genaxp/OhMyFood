@@ -35,9 +35,9 @@
 
 
 //anim descente page restau
-.anin-menu{
+.btn-menu{
     transition:all 0.8s;
-    animation:slideDown 2s;
+    animation:slideDown 3s;
 }
 
 @keyframes slideDown{
@@ -66,11 +66,10 @@
     border-radius: 0 10% 10% 0;
     cursor: pointer;
     opacity:0;
-    & h3{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn-menu:hover .fa-check-circle{
@@ -79,7 +78,6 @@
 }
 
 .btn-menu:hover .box{
-    /*margin-right:0;*/
     opacity:1;
     animation: check 0.4s ease-in-out 1s;
     transition: transform 700ms;
@@ -101,14 +99,10 @@
 //anim loader
 @keyframes loader{
     from{
-        transform: scale(1);
-       
+        transform: scale(1);   
     }
-
     to{
-        transform: scale(0);
-
-       
+        transform: scale(0); 
     }
 }
 
