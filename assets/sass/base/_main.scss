@@ -170,8 +170,8 @@
         display: flex;
         justify-content:center;
     }
-
 }
+
 .restau-carte{
     @media (min-width: 992px) {
         width:50%;
@@ -237,14 +237,17 @@ section{
     }
 }
 
-
+.containerCheck{
+    display:flex;
+    margin-right: -7rem;
+}
 
 .infos{
     padding:10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
    
-    /*@media (min-width: 768px) {
-        padding:0;
-    } */ 
 }
 
 
