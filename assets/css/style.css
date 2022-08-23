@@ -316,6 +316,7 @@ section img {
 .containerCheck {
   display: flex;
   margin-right: -7rem;
+  transition: all 8s;
 }
 
 .infos {
@@ -323,6 +324,7 @@ section img {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  flex: 1;
 }
 
 html, body {
@@ -607,22 +609,15 @@ html {
 .btn-menu:hover .box {
   opacity: 1;
   animation: check 0.4s ease-in-out 1s;
-  transition: transform 700ms;
   -webkit-animation: scale-x 200ms 0ms linear both;
+  margin-right: 0;
 }
 
 .btn-menu:hover .containerCheck {
   opacity: 1;
   animation: check 0.4s ease-in-out 1s;
-  transition: transform 700ms;
-  transform: translateX(-100px);
   -webkit-animation: scale-x 200ms 0ms linear both;
-}
-
-.infos:hover {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  margin-right: 0;
 }
 
 @keyframes check {

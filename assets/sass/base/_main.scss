@@ -240,6 +240,7 @@ section{
 .containerCheck{
     display:flex;
     margin-right: -7rem;
+    transition:all 8s;
 }
 
 .infos{
@@ -247,7 +248,7 @@ section{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-   
+    flex:1;
 }
 
 
