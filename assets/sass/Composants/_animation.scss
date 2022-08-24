@@ -19,7 +19,6 @@
 }
 
 .heart-fill:hover .heart{
-
     transform:scale(1.3);
 
     background:$color-degrade-btn;
@@ -36,7 +35,16 @@
 //anim descente page restau
 .btn-menu{
     transition:all 0.8s;
-    animation:slideDown 3s;
+    animation:slideDown 1s forwards;
+    &:nth-child(2) {
+        animation-delay: calc(2s / 5);
+    }
+    &:nth-child(3) {
+        animation-delay: calc(3s / 5);
+    }
+    &:nth-child(4) {
+            animation-delay: calc(4s / 5);
+    }
 }
 
 @keyframes slideDown{
@@ -73,15 +81,17 @@
 
 .btn-menu:hover .box{ 
     opacity:1;
-    animation: check 0.4s ease-in-out 1s;
-    -webkit-animation: scale-x 200ms 0ms linear both;
+    transition:0.4s ease-in-out;
+    animation: check 0.9s ease-in-out;
+    -webkit-animation: scale-x 200ms linear both;
     margin-right:0;
 }
 
 .btn-menu:hover .containerCheck { 
     opacity:1;
-    animation: check 0.4s ease-in-out 1s;
-    -webkit-animation: scale-x 200ms 0ms linear both;
+    transition:0.4s ease-in-out;
+    animation: check 0.9s ease-in-out;
+    -webkit-animation: scale-x 200ms linear both;
     margin-right:0;
 }
 
@@ -89,6 +99,7 @@
     0%{
         opacity:0;
         transform:translateX(0px)
+        
     }
     100% {
         opacity:1;

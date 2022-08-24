@@ -370,7 +370,7 @@ html {
   border-radius: 50%;
   background: linear-gradient(#9356DC, #FF79DA);
   margin: 0 15px;
-  animation: loader infinite 0.9s alternate-reverse;
+  animation: loader 400ms alternate-reverse;
 }
 
 .d1 {
@@ -378,11 +378,11 @@ html {
 }
 
 .d2 {
-  animation-delay: 0.05s;
+  animation-delay: 0.03s;
 }
 
 .d3 {
-  animation-delay: 0.1s;
+  animation-delay: 0.06s;
 }
 
 .cercle {
@@ -411,6 +411,9 @@ html {
   color: #ffffff;
   border: none;
   font-size: 1em;
+}
+.btn-explorer:hover {
+  filter: brightness(1.1);
 }
 
 .btn-fonction {
@@ -454,9 +457,7 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-}
-.btn-menu:hover {
-  transform: scale(1.05);
+  opacity: 0;
 }
 .btn-menu h3, .btn-menu p {
   margin: 0;
@@ -477,6 +478,9 @@ html {
     display: flex;
     flex-wrap: wrap;
   }
+}
+.btn-commander:hover {
+  filter: brightness(1.1);
 }
 .btn-commander button {
   border-radius: 50px;
@@ -574,7 +578,16 @@ html {
 
 .btn-menu {
   transition: all 0.8s;
-  animation: slideDown 3s;
+  animation: slideDown 1s forwards;
+}
+.btn-menu:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.btn-menu:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.btn-menu:nth-child(4) {
+  animation-delay: 0.8s;
 }
 
 @keyframes slideDown {
@@ -608,15 +621,17 @@ html {
 
 .btn-menu:hover .box {
   opacity: 1;
-  animation: check 0.4s ease-in-out 1s;
-  -webkit-animation: scale-x 200ms 0ms linear both;
+  transition: 0.4s ease-in-out;
+  animation: check 0.9s ease-in-out;
+  -webkit-animation: scale-x 200ms linear both;
   margin-right: 0;
 }
 
 .btn-menu:hover .containerCheck {
   opacity: 1;
-  animation: check 0.4s ease-in-out 1s;
-  -webkit-animation: scale-x 200ms 0ms linear both;
+  transition: 0.4s ease-in-out;
+  animation: check 0.9s ease-in-out;
+  -webkit-animation: scale-x 200ms linear both;
   margin-right: 0;
 }
 

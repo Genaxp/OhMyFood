@@ -7,6 +7,9 @@
     color:$color-neutre;
     border:none;
     font-size: 1em;
+    &:hover{
+        filter:brightness(1.1);
+    }  
 }
 
 .btn-fonction{
@@ -49,15 +52,11 @@
     border-radius:15px;
     box-shadow:5px 5px 5px 1px rgb(221, 221, 221) ;
     margin:20px 0;
-  
     cursor:pointer;
     overflow:hidden;
     display:flex;
     justify-content: space-between;
-
-    &:hover{
-        transform:scale(1.05);
-    }      
+    opacity:0;
     h3, p{
         margin:0;
         
@@ -81,6 +80,9 @@
         display:flex;
         flex-wrap: wrap;  
     }
+    &:hover{
+        filter:brightness(1.1);
+    }  
 
     button{
         border-radius:50px;

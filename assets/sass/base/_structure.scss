@@ -44,14 +44,14 @@ html{
     border-radius:50%;
     background:$color-degrade-btn ;
     margin: 0 15px;
-    animation:loader infinite 0.9s alternate-reverse;
+    animation:loader 400ms alternate-reverse ;
 }
 .d1{
     animation-delay:0s;
 }
 .d2{
-    animation-delay: 0.05s;
+    animation-delay: 0.03s;
 }
 .d3{
-    animation-delay: 0.10s;
+    animation-delay: 0.06s;
 }
