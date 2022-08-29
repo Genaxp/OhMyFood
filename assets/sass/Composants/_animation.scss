@@ -34,27 +34,29 @@
 
 //anim descente page restau
 .btn-menu{
-    transition:all 0.8s;
-    animation:slideDown 1s forwards;
-    &:nth-child(2) {
-        animation-delay: calc(2s / 5);
+    animation: slideDown 8s;
+    animation-fill-mode: both;
+    
+    &:nth-child(n) {
+        animation-delay: 0.2s;
+        color:red;      
     }
-    &:nth-child(3) {
-        animation-delay: calc(3s / 5);
-    }
-    &:nth-child(4) {
-            animation-delay: calc(4s / 5);
+    &:nth-child(n) {
+        animation-delay: 0.5s;
+        color:blue;
     }
 }
 
+
+
 @keyframes slideDown{
-    0%{
-        transform:translateY(50%);
-        opacity:0;
+    0% {
+        opacity: 0;
+        transform: translateY(50%)
     }
-    100%{
-        transform:translateY(0);
+    100% {
         opacity: 1;
+        transform: translateY(0)
     }
 }
 
@@ -82,7 +84,7 @@
 .btn-menu:hover .box{ 
     opacity:1;
     transition:0.4s ease-in-out;
-    animation: check 0.9s ease-in-out;
+    animation: check 0.4s ease-in-out;
     -webkit-animation: scale-x 200ms linear both;
     margin-right:0;
 }
@@ -90,7 +92,7 @@
 .btn-menu:hover .containerCheck { 
     opacity:1;
     transition:0.4s ease-in-out;
-    animation: check 0.9s ease-in-out;
+    animation: check 0.5s ease-in-out;
     -webkit-animation: scale-x 200ms linear both;
     margin-right:0;
 }

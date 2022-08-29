@@ -58,12 +58,6 @@
         font-size: 1.2em;
     }
 }
-/*.fond{
-    @media (min-width: 768px) {
-        background-image: url(restau-rachel-pexels.png);
-
-    }
-}*/
 
 //FONCTIONNEMENT
 .concept-marge{
@@ -181,6 +175,10 @@
 
 //PAGES RESTAU
 
+.pageRestos i{
+    color:#000000;
+}
+
 section{
     background-color: $color-smokey;
     img{
@@ -240,7 +238,6 @@ section{
 .containerCheck{
     display:flex;
     margin-right: -7rem;
-    transition:all 8s;
 }
 
 .infos{
