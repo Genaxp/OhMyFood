@@ -454,7 +454,7 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  opacity: 0;
+  /*opacity:0;*/
 }
 .btn-menu h3, .btn-menu p {
   margin: 0;
@@ -573,17 +573,18 @@ html {
   -moz-text-fill-color: transparent;
 }
 
-.btn-menu {
+.colonne article {
   animation: slideDown 8s;
   animation-fill-mode: both;
 }
-.btn-menu:nth-child(n) {
-  animation-delay: 0.2s;
-  color: red;
+.colonne article:nth-child(2) {
+  animation-delay: 0.02ms;
 }
-.btn-menu:nth-child(n) {
-  animation-delay: 0.5s;
-  color: blue;
+.colonne article:nth-child(3) {
+  animation-delay: 0.03ms;
+}
+.colonne article:nth-child(4) {
+  animation-delay: 0.04ms;
 }
 
 @keyframes slideDown {

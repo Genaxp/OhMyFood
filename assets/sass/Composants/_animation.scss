@@ -33,20 +33,17 @@
 
 
 //anim descente page restau
-.btn-menu{
+.colonne article{
     animation: slideDown 8s;
     animation-fill-mode: both;
     
-    &:nth-child(n) {
-        animation-delay: 0.2s;
-        color:red;      
-    }
-    &:nth-child(n) {
-        animation-delay: 0.5s;
-        color:blue;
+  
+    @for $n from 2 through 4{
+        &:nth-child(#{$n}) {
+            animation-delay: $n * 0.01ms;    
+        }
     }
 }
-
 
 
 @keyframes slideDown{
