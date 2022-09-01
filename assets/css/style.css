@@ -410,7 +410,7 @@ html {
   font-size: 1em;
 }
 .btn-explorer:hover {
-  filter: brightness(1.1);
+  filter: opacity(0.5);
 }
 
 .btn-fonction {
@@ -454,7 +454,6 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  /*opacity:0;*/
 }
 .btn-menu h3, .btn-menu p {
   margin: 0;
@@ -477,7 +476,7 @@ html {
   }
 }
 .btn-commander:hover {
-  filter: brightness(1.1);
+  filter: opacity(0.5);
 }
 .btn-commander button {
   border-radius: 50px;
