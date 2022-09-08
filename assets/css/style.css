@@ -408,9 +408,24 @@ html {
   color: #ffffff;
   border: none;
   font-size: 1em;
+  position: relative;
+  z-index: 0;
 }
-.btn-explorer:hover {
-  filter: opacity(0.5);
+.btn-explorer:hover::after {
+  opacity: 1;
+}
+.btn-explorer::after {
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #a16be0 0%, #ff46cc 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .btn-fonction {
@@ -499,44 +514,6 @@ html {
   transition: opacity 250ms;
 }
 
-/*.btn-commander{
-    display:flex;
-    justify-content: center;
-
-    padding-top:40px;
-
-    @media (min-width: 768px) {
-        display:flex;
-        flex-wrap: wrap;  
-    }
-    button{
-        border-radius:50px;
-        padding: 20px 50px;
-        background:$color-primary;
-        color:$color-neutre;
-        border:none;
-        font-size: 1em;
-        font-weight: bold;
-        position:relative;
-    }
-    &:hover{
-        &::after{
-            opacity:1;
-        }
-    } 
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: radial-gradient(circle, lighten($color-primary, 5) 0%, darken($color-primary, 10) 100%);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;    
-    }
-}*/
 .titre-menu {
   display: flex;
   justify-content: space-around;
