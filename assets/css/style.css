@@ -495,11 +495,11 @@ html {
 }
 .btn-commander:hover {
   border-radius: 50px;
-  box-shadow: lightgrey 0px 8px 24px;
 }
 .btn-commander:hover::after {
   border-radius: 50px;
   opacity: 1;
+  box-shadow: lightgrey 0px 8px 24px;
 }
 .btn-commander::after {
   border-radius: 50px;

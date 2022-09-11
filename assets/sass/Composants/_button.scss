@@ -98,10 +98,11 @@
     z-index: 0;
     &:hover {
         border-radius: 50px;
-        box-shadow: lightgrey 0px 8px 24px;
+        
         &::after {
             border-radius: 50px;
             opacity:1;
+            box-shadow: lightgrey 0px 8px 24px;
         }
     } 
     &::after {
