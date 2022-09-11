@@ -495,6 +495,7 @@ html {
 }
 .btn-commander:hover {
   border-radius: 50px;
+  box-shadow: lightgrey 0px 8px 24px;
 }
 .btn-commander:hover::after {
   border-radius: 50px;
@@ -502,7 +503,6 @@ html {
 }
 .btn-commander::after {
   border-radius: 50px;
-  box-shadow: lightgrey 0px 8px 24px;
   content: "";
   position: absolute;
   top: 0;
