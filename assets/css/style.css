@@ -410,6 +410,7 @@ html {
   font-size: 1em;
   position: relative;
   z-index: 0;
+  box-shadow: none;
 }
 .btn-explorer:hover::after {
   opacity: 1;
@@ -426,6 +427,7 @@ html {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+  box-shadow: rgb(139, 137, 137) 0px 8px 24px;
 }
 
 .btn-fonction {
@@ -500,7 +502,6 @@ html {
 .btn-commander:hover::after {
   border-radius: 50px;
   opacity: 1;
-  box-shadow: lightgrey 0px 8px 24px;
 }
 .btn-commander::after {
   border-radius: 50px;
