@@ -105,6 +105,7 @@
     } 
     &::after {
         border-radius: 50px;
+        box-shadow: lightgrey 0px 8px 24px;
         content: "";
         position: absolute;
         top: 0;
@@ -115,6 +116,9 @@
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
+        &:hover{
+            box-shadow: lightgrey 0px 8px 24px;
+        }
     }
 }
 
