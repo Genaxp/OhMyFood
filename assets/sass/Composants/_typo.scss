@@ -7,7 +7,7 @@
     background: $color-smokey;
     position: relative;
     bottom: 50px;
-    padding:40px;
+    padding:40px 0;
     font-family: 'Shrikhand';       
     @media (min-width: 768px) {
         background-color:$color-terciar;
@@ -15,10 +15,12 @@
         justify-content: center;
     }
     h1{
-        padding-right:80px;
-        font-size:2em;
+        font-size:1.5em;
+        @media (min-width: 768px) {
+            padding-right:80px;
+            font-size:2em;
+        }
     } 
- 
 }
 
 .titre{
